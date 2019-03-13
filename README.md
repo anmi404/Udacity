@@ -60,11 +60,17 @@ rinkeby: {
 5. Setup a valid Rinkeby account in Metamask.
 
 ## Testing the project
-In order to test the project in the Rinkeby network, execute:
+In order to test the project in the local network, run:
 ```
-truffle test --network rinkeby
+truffle migrate --reset
+truffle test --network develop
+```
+To execute in the rinkeby network the contract run command:
+```
+truffle migrate --reset --network rinkeby
 ```
 A web page has been provided, allowing both to create a star and to retrieve the name of the star given its token.
+You can access that page at address localhost:8080 after executing __npm run dev__ in the terminal. 
 
 ## What do I learned with this Project
 
